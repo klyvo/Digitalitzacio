@@ -6,7 +6,3 @@ if(a.isnumeric()):
         print("Aquest numero es parell.")
     else:
         print("Aquest numero es parell")
-
-
-else:
-    print("eres tonto?")

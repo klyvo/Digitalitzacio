@@ -1,3 +1,4 @@
 a = int(input("Di un numero: "))
 
-for i in range(1,11):
+i = range(0,a)
+print(list(i))
