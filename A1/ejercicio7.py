@@ -1,2 +1,2 @@
 s =input("Di una palabra: ")
-print(len(s)) 
+print("Esta palabra tiene ",len(s)," caracteres") 
