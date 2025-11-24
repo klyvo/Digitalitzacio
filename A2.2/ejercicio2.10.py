@@ -1,11 +1,16 @@
 # Frase
-frase = "Hola mundo, esto es una frase de prueba"
+a = input("Diga la frase para contar la frecuencia de palabras: ")
 
 
 # Usar split() por defecto (divide por espacios)
-palabras_espacios = frase.split()
-print(palabras_espacios)
+palabras_espacios = a.split()
 
-frecuenciaPalab = [frase.count(w) for w in frase]
+diccionario_cuento={}
 
-print("Frecuencias\n" + str(frecuenciaPalab) + "\n")
+for palabra in palabras_espacios:
+    if palabra in diccionario_cuento:
+        diccionario_cuento[palabra] = diccionario_cuento[palabra]+1
+    else: diccionario_cuento[palabra] = 1
+
+print("Cuento ", diccionario_cuento)
+
